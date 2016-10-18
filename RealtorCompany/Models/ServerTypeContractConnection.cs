@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace RealtorCompany.Models
 {
@@ -13,7 +14,6 @@ namespace RealtorCompany.Models
         public decimal Price { get; set; }
         //Определение отношений в БД
         public virtual ServesType ServerType { get; set; }
-
-
+        public virtual Contract Contract { get; set; }
     }
 }

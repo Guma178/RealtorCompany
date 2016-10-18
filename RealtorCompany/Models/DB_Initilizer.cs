@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Data.Entity;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace RealtorCompany.Models
 {
@@ -12,6 +14,7 @@ namespace RealtorCompany.Models
         {
             //Переопределить сид
             base.Seed(context);
+            //Как заполнить DBContext данными с помощю SQL скрипта?
         }
     }
 }
